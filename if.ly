@@ -90,8 +90,7 @@ Flute_First = {  % Flute 1
 
   
 } %end Flute 1
-
-  
+%{  
 \addlyrics {
   
     ë§Œ ì•½ ì— ë‚´ ê°€ ê°„ ë‹¤ ë©´- ë‚´ ê°€ ë‹¤ ê°€ ê°„ ë‹¤- ë©´-
@@ -116,7 +115,7 @@ Flute_First = {  % Flute 1
     ë§Œ ë‚¨ ë’¤ ì— ê¸° ë‹¤ ë¦¬ ëŠ” ì•„ í”” ì— ìŠ¬ í”ˆ ë‚˜ ë‚  ë“¤ ì´
     ë‘ ë ¤ ì›Œ ì„œ ì¸ ê°€ ë´
 }
-
+%}
 myChords = \relative c' {
    
    \chords { 
@@ -138,16 +137,15 @@ myChords = \relative c' {
      }
     
 }
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \header{
-  title = \markup \center-column  { " ë§Œì•½ì— "  " " }
+  title = \markup \center-column  { " if_Manyage "  " " }
   subtitle = "  "
   subsubtitle = "  "
   composer = " "
   tagline = \markup {
-    Music engraving by \italic sono
+    Music engraving by \fontsize # 3 \italic sono
     with
     \line
     { LilyPond \simple #(lilypond-version) }
@@ -178,6 +176,7 @@ myChords = \relative c' {
 
 commands = {
 	\clef treble
+  \numericTimeSignature
 	\time 4/4
 	\key a \major
 
@@ -198,16 +197,12 @@ commands = {
 \score {
 
 	%\transpose bes e {
-			
-	  <<
-	   
-            \new ChordNames { \myChords }
-            \new Staff="Flute_1st" \relative c' { \commands \Flute_First }
-            %\context Staff="Flute_1st" \relative c'' { \commands \Flute_First }
+		<<
+      \new ChordNames { \myChords }
+      \new Staff="Flute_1st" \relative c' { \commands \Flute_First }
+      %\context Staff="Flute_1st" \relative c'' { \commands \Flute_First }
 	    %\context Staff="Flute_2nd" \relative c' { \commands \Flute_Second }
-	  
 	  >>
-		
 	%} %end transpose
 
 %{
@@ -228,5 +223,4 @@ commands = {
          (padding . 1))
   }
 }
-
 } % end score
