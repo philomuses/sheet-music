@@ -187,22 +187,19 @@ flute = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \header{
-  title = \markup \center-column  { "A wonderful Savior is Jesus my Lord"  " " }
+  title = \markup \center-column  { "                A wonderful Savior is Jesus my Lord"  " " }
   %title = \markup \center-column  { "ì˜¤ ë†€ë¼ìš´ êµ¬ì„¸ì£¼ ì˜ˆìˆ˜ ë‚´ ì£¼"  " " }
   subtitle = "  "
   composer = "  "
 }
 
-%#(set-global-staff-size 18)
-%#(set-global-staff-size 21)
-#(set-global-staff-size 23)
+#(set-global-staff-size 21)
 
 \paper {
-
-	left-margin = .6\cm
-	right-margin = .6\cm
-	#(define between-system-space (* 20 mm))
-	%#(define between-system-padding (* 1 mm))
+	left-margin = 2.0\cm
+	right-margin = 2.0\cm
+	%#(define between-system-space (* 20 mm))
+	system-system-spacing.basic-distance = # 14  %#8
 	#(define between-system-padding (* 5 mm))
 	#(define top-margin (* 1.5 cm))
 	#(define bottom-margin (* 1.2 cm))
