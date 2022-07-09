@@ -1,13 +1,8 @@
-\header {
-  title = "Moon River"
-  composer = "Henry Mancini"
-}
+\version "2.22.1"
 
-\score {
-  \relative c'' {
-  \numericTimeSignature
-  \time 3/4
-  \key d \major
+%\score {
+Voice = \relative c'' {
+  
   \compressMMRests {
   R1*3/4 * 4
 %05
@@ -41,9 +36,31 @@
   g4\p^( e2~ | e) fis4^( | d2.~ | d) | R1*3/4 * 5 |
   \bar "|."
   } % end compressMMRests
-  
-  }
+} % end Voice %%%%%%%%%%%
 
+\header {
+  title = "Moon River"
+  composer = "Henry Mancini"
+  tagline = \markup {
+    for \fontsize # 3 \italic Jamfl
+    with
+    \line
+    { LilyPond \simple #(lilypond-version) }
+  }
+}
+#(set-global-staff-size 19)
+\paper {
+  left-margin = 2.0\cm
+  right-margin = 1.8\cm
+  system-system-spacing.basic-distance = # 18  %#8
+}
+commands = {
+  \numericTimeSignature
+  \time 3/4
+  \key d \major
+}
+\score {
+  \context Staff \relative c'' { \commands \Voice }
   \layout {}
   \midi {}
 }
