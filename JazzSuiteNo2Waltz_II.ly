@@ -1,7 +1,6 @@
 \version "2.22.1"
 
 Melody = {
-
     \compressMMRests {
       R1*2*6/8 \bar "||"
       e4.\mf c4( b8) | a4.~ a8 a( b) | c( a c) e4( f8) |
