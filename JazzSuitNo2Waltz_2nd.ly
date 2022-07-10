@@ -4,14 +4,24 @@ Melody_Second = {
   \compressMMRests {
     R1*6/8 * 2 \bar "||"
     e4. c4( b8) | a4.~ a8 a b | c( a c) e4( f8) |
-    e4. d | d b4( a8 | gis4.~ gis8 e( gis) | 
-    b( gis b) d( e f) | dis4. e |
+    e4. d | d b4( a8) | gis4.~ gis8 e( gis) | 
+    b( gis b) d( e f) | dis4. e | \bar "||"
+    \once \override Score.RehearsalMark.font-size = #2
+    \mark \markup { \musicglyph "scripts.segno" }
+  %11
+    e c | a f | d' b | c r8 a b | c8 c16( b c d) b8 b16( a b c |
+    a8 r c r a b | c c16( b c d) b8 b16( a b c) |
+    a8 r c r c d | e8 e16( d c f) d8 d16( c d e) | c4. r |
+    e c4( b8) | a4.~ a8 a( b) | c( a c) e4( f8) | e4. d | 
+    d b4( a8) | gis4.~ gis8 e( gis) | b( gis b) d( e f) |
+  %28
+    dis4. e |
 
   } % end compressMMrests
 
 
 } % end Melody_Second
-%(
+%{
 Melody_First = {
     \compressMMRests {
       R1*2*6/8 \bar "||"
@@ -71,7 +81,7 @@ Melody_First = {
     } % end compressMMRests
     
 } % end Melody
-%)  
+%}  
 %%%%%%%% end Notes %%%%%%%%%
 
 \header {
