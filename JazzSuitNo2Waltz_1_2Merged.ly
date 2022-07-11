@@ -125,12 +125,14 @@ Melody_Second = {
   }
 }
 
-#(set-global-staff-size 20)
+#(set-global-staff-size 19)
 
 \paper {
-  left-margin = 2.0\cm
-  right-margin = 1.8\cm
-  system-system-spacing.basic-distance = # 23 %#8
+  top-margin = 2.0\cm
+  bottom-margin = 2.0\cm
+  left-margin = 1.8\cm
+  right-margin = 1.5\cm
+  system-system-spacing.basic-distance = # 21 %#8
 }
 
 commands = {
