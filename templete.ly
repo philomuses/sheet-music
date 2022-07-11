@@ -69,7 +69,7 @@ Melody = {
   subsubtitle = "  "
   composer = " Dmitri Shostakovich "
   arranger = "  "
-  tagline = \markup {
+  tagline = \markup { % "tagline = ##f"
     for \fontsize # 3 \italic Jamfl
     with
     \line
