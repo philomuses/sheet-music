@@ -1,57 +1,5 @@
 \version "2.22.1"
 
-Melody_Second = {
-  \compressMMRests {
-    R1*6/8 * 2 \bar "||"
-    e4. c4( b8) | a4.~ a8 a b | c( a c) e4( f8) |
-    e4. d | d b4( a8) | gis4.~ gis8 e( gis) | 
-    b( gis b) d( e f) | dis4. e | \bar "||"
-    \once \override Score.RehearsalMark.font-size = #2
-    \mark \markup { \musicglyph "scripts.segno" }
-  %11
-    e c | a f | d' b | c r8 a b | c8 c16( b c d) b8 b16( a b c) |
-    a8 r c r a b | c c16( b c d) b8 b16( a b c) |
-    a8 r c r c d | e8 e16( d c f) d8 d16( c d e) | c4. r |
-    e c4( b8) | a4.~ a8 a( b) | c( a c) e4( f8) | e4. d | 
-    d b4( a8) | gis4.~ gis8 e( gis) | b( gis b) d( e f) |
-  %28
-    dis4. e | e d4( c8) | b4( a8) f4. | d' c4( b8) | \bar "||"
-    c4. r8 a b | c c16( b c d) b8 b16( a b c) | a8 r c r a b |
-    c c16(b c d) b8 b16( a b c) | a8 r c r c d | 
-    e8 e16( d e f) d8 d16( \mark "To Coda" c d e) |
-    \bar "||"
-  %38
-    c8 e, c a' r g' | e4. e | g4( f8) e4. |
-    g f | e8( g e) c( d e) | cis4. cis | 
-    d8( f e) d( c d) | c4. b | c e | g g8( a b) |
-    c( d c) g4( b8) | b4. b | b8( c b) c,( e g) |
-  %51
-    g4. g | a d,8( c d) | e4( c8) g( a b) | c( d c) bes( a gis) |
-    \repeat volta 2 {
-      a'4. c,8( b c) | a'4 c,8~ c bes'( a) | a4( g8) fis4( g8) |
-      d'4( c8) bes( a gis) | a4 c,8~ c b( c) |
-      a'4 c,8~ c d( e) | f4( g8) a4 a8 |
-    }
-    \alternative {
-      { b( a b) c16 c c8 c }
-      { b( a b) c4( d8) }
-    }
-    c4.( b4) r8 | \bar "||" R1*6/8 * 2 |
-    e,4. c4( b8) | a4.~ a8 a( b) | c( a c) e4( f8) |
-    e4. d | d4. b4( a8) | gis4.~ gis8 e( gis) | 
-    b( gis b) d( e f) | 
-    dis4. e_\markup { \right-align { D.S. "al Coda" } } |
-    \bar "||" 
-    \once \override Score.RehearsalMark.font-size = #4
-    \mark \markup { \musicglyph "scripts.coda" }
-    c8 r b c r r
-    \bar "|."
-
-  } % end compressMMrests
-
-
-} % end Melody_Second
-%{  %%%%%%%%%%%%%%%
 Melody_First = {
     \compressMMRests {
       R1*2*6/8 \bar "||"
@@ -110,9 +58,58 @@ Melody_First = {
     } % end compressMMRests
     
 } % end Melody_First
-%}  
-%%%%%%%% end Notes %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%
+Melody_Second = {
+  \compressMMRests {
+    R1*6/8 * 2 \bar "||"
+    e4. c4( b8) | a4.~ a8 a b | c( a c) e4( f8) |
+    e4. d | d b4( a8) | gis4.~ gis8 e( gis) | 
+    b( gis b) d( e f) | dis4. e | \bar "||"
+    \once \override Score.RehearsalMark.font-size = #2
+    \mark \markup { \musicglyph "scripts.segno" }
+  %11
+    e c | a f | d' b | c r8 a b | c8 c16( b c d) b8 b16( a b c) |
+    a8 r c r a b | c c16( b c d) b8 b16( a b c) |
+    a8 r c r c d | e8 e16( d c f) d8 d16( c d e) | c4. r |
+    e c4( b8) | a4.~ a8 a( b) | c( a c) e4( f8) | e4. d | 
+    d b4( a8) | gis4.~ gis8 e( gis) | b( gis b) d( e f) |
+  %28
+    dis4. e | e d4( c8) | b4( a8) f4. | d' c4( b8) | \bar "||"
+    c4. r8 a b | c c16( b c d) b8 b16( a b c) | a8 r c r a b |
+    c c16(b c d) b8 b16( a b c) | a8 r c r c d | 
+    e8 e16( d e f) d8 d16( c d e) |
+    \bar "||"
+  %38
+    c8 e, c a' r g' | e4. e | g4( f8) e4. |
+    g f | e8( g e) c( d e) | cis4. cis | 
+    d8( f e) d( c d) | c4. b | c e | g g8( a b) |
+    c( d c) g4( b8) | b4. b | b8( c b) c,( e g) |
+  %51
+    g4. g | a d,8( c d) | e4( c8) g( a b) | c( d c) bes( a gis) |
+    \repeat volta 2 {
+      a'4. c,8( b c) | a'4 c,8~ c bes'( a) | a4( g8) fis4( g8) |
+      d'4( c8) bes( a gis) | a4 c,8~ c b( c) |
+      a'4 c,8~ c d( e) | f4( g8) a4 a8 |
+    }
+    \alternative {
+      { b( a b) c16 c c8 c }
+      { b( a b) c4( d8) }
+    }
+    c4.( b4) r8 | \bar "||" R1*6/8 * 2 |
+    e,4. c4( b8) | a4.~ a8 a( b) | c( a c) e4( f8) |
+    e4. d | d4. b4( a8) | gis4.~ gis8 e( gis) | 
+    b( gis b) d( e f) | dis4. e |
+    \bar "||" 
+    \once \override Score.RehearsalMark.font-size = #4
+    \mark \markup { \musicglyph "scripts.coda" }
+    c8 r b c r r
+    \bar "|."
 
+  } % end compressMMrests
+
+
+} % end Melody_Second
+%%%%%%%% end Notes %%%%%%%%%
 \header {
 
   title = \markup \center-column  { " Jazz suit No.2 Waltz "  " " }
@@ -145,8 +142,8 @@ commands = {
 
 \score {
   <<
-    %\context Staff \relative c'' { \commands \Melody_First }
-    \context Staff \relative c'' { \commands \Melody_Second }
+    \context Staff = "Fl1" \relative c'' { \commands \Melody_First }
+    \context Staff = "Fl2" \relative c'' { \commands \Melody_Second }
   >>
   \layout {}
   % c\midi {}
