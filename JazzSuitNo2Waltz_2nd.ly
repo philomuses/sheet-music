@@ -21,7 +21,7 @@ Melody_Second = {
     e8 e16( d e f) d8 d16( \mark "To Coda" c d e) |
     \bar "||"
   %38
-    c8 e, c | a' r g' | e4. e | g4( f8) e4. |
+    c8 e, c a' r g' | e4. e | g4( f8) e4. |
     g f | e8( g e) c( d e) | cis4. cis | 
     d8( f e) d( c d) | c4. b | c e | g g8( a b) |
     c( d c) g4( b8) | b4. b | b8( c b) c,( e g) |
@@ -37,10 +37,10 @@ Melody_Second = {
       { b( a b) c4( d8) }
     }
     c4.( b4) r8 | \bar "||" R1*6/8 * 2 |
-    e4. c4( b8) | a4.~ a8 a( b) | c( a c) e4( f8) |
+    e,4. c4( b8) | a4.~ a8 a( b) | c( a c) e4( f8) |
     e4. d | d4. b4( a8) | gis4.~ gis8 e( gis) | 
     b( gis b) d( e f) | 
-    dis4. e_\markup { \left-align { D.S. "al Coda" } } |
+    dis4. e_\markup { \right-align { D.S. "al Coda" } } |
     \bar "||" 
     \once \override Score.RehearsalMark.font-size = #4
     \mark \markup { \musicglyph "scripts.coda" }
