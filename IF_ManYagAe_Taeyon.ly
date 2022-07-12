@@ -6,88 +6,49 @@ Flute_First = {  % Flute 1
   
   R1 * 8
 %09
-  cis4 cis8 cis~ cis4 r
-  cis8 b cis8 d16 b~ b2
-  r4 b8 cis e d cis8. b16(
-  a8) a~ a2 r8 a
-  fis'4 fis8 fis~ fis4 r8 a,
-  gis4 e'8 e~ e2
-  r4 d8 cis16 d~ d8 cis4 d8~
+  cis4 cis8 cis~ cis4 r | cis8 b cis8 d16 b~ b2 | 
+  r4 b8 cis e d cis8. b16( | a8) a~ a2 r8 a | 
+  fis'4 fis8 fis~ fis4 r8 a, | gis4 e'8 e~ e2 |
+  r4 d8 cis16 d~ d8 cis4 d8~ | 
 %16
-  d cis16( b~ b2) r4
-  cis4 cis8 cis~ cis4 r
-  cis8 b cis d16 b~ b2
-  r4 b8 cis e d cis8. b16(
-  a8) a~ a2 r8 a
-%21
-  fis'4 fis8 fis~ fis4 r8 gis
-  fis e e8. e16~ e2
-  r4 d8 cis16 d~ d8 cis16( b~ b8) b16 cis~
-  cis8 cis16( b a2.)
-  r2 b'8 a gis a
+  d cis16( b~ b2) r4 | cis4 cis8 cis~ cis4 r |
+  cis8 b cis d16 b~ b2 | r4 b8 cis e d cis8. b16( |
+  a8) a~ a2 r8 a | fis'4 fis8 fis~ fis4 r8 gis |
+  fis e e8. e16~ e2 | r4 d8 cis16 d~ d8 cis16( b~ b8) b16 cis~ |
+  cis8 cis16( b a2.) | r2 b'8 a gis a |
 %26
-  cis4 e,8 e~ e4 e8 cis'
-  cis b b a a gis16( fis) fis8 gis
-  a4 cis,8 cis~ cis4 cis8 a'
-  a gis gis fis fis e gis8. a16
-  fis2 r8. fis16 fis8. gis16
+  cis4 e,8 e~ e4 e8 cis' | cis b b a a gis16( fis) fis8 gis |
+  a4 cis,8 cis~ cis4 cis8 a' | a gis gis fis fis e gis8. a16 |
+  fis2 r8. fis16 fis8. gis16 |
 %31
-  e2 r4 r8 e
-  e d cis d fis a cis8. d16~
-  d b8. r4 b8 a gis a
-  cis4 e,8 e~ e4 e8 cis'
-  cis b b a a gis16( fis) fis8 gis
+  e2 r4 r8 e | e d cis d fis a cis8. d16~ | 
+  d b8. r4 b8 a gis a | cis4 e,8 e~ e4 e8 cis' |
+  cis b b a a gis16( fis) fis8 gis |
 %36
-  a4 cis,8 cis~ cis4 cis8 a'
-  a gis gis fis fis e gis8. a16
-  fis2 r8 gis fis e
-  e4 cis'8 cis~ cis4 r
-  cis8 b cis d b4. a8~
+  a4 cis,8 cis~ cis4 cis8 a' | a gis gis fis fis e gis8. a16 |
+  fis2 r8 gis fis e | e4 cis'8 cis~ cis4 r | cis8 b cis d b4. a8~ |
 %41
-  a a~ a2 r4
-  r2 r2 \pageBreak % \pageTurn
-  cis,4 cis8 cis~ cis4 r
-  cis8 b cis d16 b~ b2
-  r4 b8 cis e d cis8. b16(
-%46
-  a8) a~ a2 r8 a
-  fis'4 fis8 fis~ fis4 r8 gis
-  fis e e8. e16~ e2
-  r4 d8 cis16 d~ d8 cis~ cis b16 cis~
-  cis8 cis16( b a2.)
+  a a~ a2 r4 | r2 r2 \pageBreak |
+  cis,4 cis8 cis~ cis4 r | cis8 b cis d16 b~ b2 |
+  r4 b8 cis e d cis8. b16( | a8) a~ a2 r8 a |
+  fis'4 fis8 fis~ fis4 r8 gis | fis e e8. e16~ e2 |
+  r4 d8 cis16 d~ d8 cis~ cis b16 cis~ | cis8 cis16( b a2.) |
 %51
-  r2 b'8 a gis a \bar "||"
-  cis4 e,8 e~ e4 e8 cis'
-  cis b b a a gis16( fis) fis8 gis
-  a4 cis,8 cis~cis4 cis8 a'
-  a gis gis fis fis e gis8. a16
-%56
-  fis2 r8. fis16 fis8. gis16
-  e2 r4 r8 e
-  e d cis d fis a cis8. d16~
-  d b8. r4 b8 a gis a
-  cis4 e,8 e~ e4 e8 cis'
+  r2 b'8 a gis a \bar "||" | cis4 e,8 e~ e4 e8 cis' |
+  cis b b a a gis16( fis) fis8 gis | a4 cis,8 cis~cis4 cis8 a' |
+  a gis gis fis fis e gis8. a16 | fis2 r8. fis16 fis8. gis16 |
+  e2 r4 r8 e | e d cis d fis a cis8. d16~ | d b8. r4 b8 a gis a |
+  cis4 e,8 e~ e4 e8 cis' |
 %61
-  cis b b a a gis16( fis) fis8 gis
-  a4 cis,8 cis~ cis4 cis8 a'
-  a gis gis fis fis e gis8. a16
-  fis2 r8 gis fis e
-  e4 cis'8 cis~ cis4 r
-%66
-  cis8 b cis d b4. a8~
-  a a r4 b8 a gis a
-  cis4 e,8 e~ e4 e8 cis'
-  cis b b a a gis16( fis) fis8 gis
-  a4 cis,8 cis~ cis4 cis8 a'
+  cis b b a a gis16( fis) fis8 gis | a4 cis,8 cis~ cis4 cis8 a' |
+  a gis gis fis fis e gis8. a16 | fis2 r8 gis fis e |
+  e4 cis'8 cis~ cis4 r | cis8 b cis d b4. a8~ | a a r4 b8 a gis a |
+  cis4 e,8 e~ e4 e8 cis' | cis b b a a gis16( fis) fis8 gis |
+  a4 cis,8 cis~ cis4 cis8 a' |
 %71
-  a gis gis fis fis e gis8. a16
-  fis2 r8 gis fis16( e) e8
-  e4 cis'8 cis~ cis 2
-  R1
-  cis8 b cis d b4. a8~
-  a a~ a2 r4
-  r2 r2
-  R1
+  a gis gis fis fis e gis8. a16 | fis2 r8 gis fis16( e) e8 |
+  e4 cis'8 cis~ cis 2 | R1 | cis8 b cis d b4. a8~ | a a~ a2 r4 |
+  r2 r2 | R1 |
   \bar "|."
   
 } %end Flute 1
@@ -121,21 +82,20 @@ Flute_First = {  % Flute 1
 myChords = \relative c' {
    
    \chords { 
-     R1 * 8 a1 e/gis cis:7/f fis:m
-     d2:maj7 e/d cis1:m7 b:m7 e:7 
-     a e/gis cis/f fis2:m a/e
-     d:maj7 e/d cis:m7 fis4:7sus4 fis:7
-     b2:m d4/e e a2 d/e
-     e1 a cis:m7/gis fis:m a2/cis cis:m7
-     d1 cis:m7 b2:m7 fis4/b d/a 
-     e2 d4/fis e:7 a1 cis:m7/gis fis:m cis:m d
-     cis2:m7 fis4:7sus4 fis:7 b2:m7 d/e a1 e:7
-     a e/gis cis:7/f fis:m d2 e/d cis2:m7 fis4:7sus4 fis:7
-     b2:m d/e a:2 d/e
-     e2 e:7 a1 cis:m7/gis fis:m cis:m7 d cis:m7 b:m7 b2:m7/e e:7
-     a1 cis:m/gis fis:m7 cis2:m e d1 cis2:m7 fis:7 b:m7 d/e a d4/e e
-     a1 cis:m7/gis fis:m cis:m7 d cis2:m7 fis:7 fis1:7
-     b2:m7 d/e a1 e2 d/e a1
+     R1 * 8 | a1 | e/gis | cis:7/f | fis:m |
+     d2:maj7 e/d | cis1:m7 | b:m7 | e:7 | 
+     a | e/gis | cis/f | fis2:m a/e |
+     d:maj7 e/d | cis:m7 fis4:7sus4 fis:7 |
+     b2:m d4/e e | a2 d/e | e1 | a | cis:m7/gis | fis:m | 
+     a2/cis cis:m7 | d1 | cis:m7 | b2:m7 fis4/b d/a |
+     e2 d4/fis e:7 | a1 | cis:m7/gis | fis:m | cis:m | 
+     d | cis2:m7 fis4:7sus4 fis:7 | b2:m7 d/e | a1 | e:7 |
+     a | e/gis | cis:7/f | fis:m | d2 e/d | cis2:m7 fis4:7sus4 fis:7 |
+     b2:m d/e | a:2 d/e | e2 e:7 | a1 | cis:m7/gis | fis:m | 
+     cis:m7 | d | cis:m7 | b:m7 | b2:m7/e e:7 |
+     a1 | cis:m/gis | fis:m7 | cis2:m e | d1 | cis2:m7 fis:7|  b:m7 d/e | 
+     a d4/e e | a1 | cis:m7/gis | fis:m | cis:m7 | d | cis2:m7 fis:7 | 
+     fis1:7 | b2:m7 d/e | a1 | e2 d/e | a1 |
      }
     
 }
