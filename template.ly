@@ -1,99 +1,82 @@
 \version "2.22.1"
 
 Melody = {
-    \compressMMRests {
-      R1*2*6/8 \bar "||"
-      e4.\mf c4( b8) | a4.~ a8 a( b) | c( a c) e4( f8) |
-      e4. d | d b4( a8) | gis4.~ gis8 e( gis) | 
-      b( gis b) d( e f) | dis4. e4 r8 |
-      \bar "||"
-      \once \override Score.RehearsalMark.font-size = #2
-      \mark \markup { \musicglyph "scripts.segno" }
-    %11
-      c'4.\f b4( a8) | g4( f8) d4. | b'4. a4( g8) |
-      g4. r8 c, d | e e16( d e f) d8 d16( c d e) |
-      c8 r e r c\mp d | e e16( d e f) d8 d16( c d e) |
-      c8 r e r a b | c c16( b c d) b8 b16( a b c) |
-      a4. r4. |
-    %21
-      e\mf c4( b8) | a4.~ a8 a( b) | c( a c) e4( f8) |
-      e4. d | d b4( a8) | gis4.~ gis8 e( gis) | b( gis b) d( e f) | 
-      dis4. e | c'4. b4( a8) | g4( f8) d4. | b'4. a4( g8)
-      \bar "||"
-    %32
-      g4. r8 c, d | e e16( d e f) d8 d16( c d e) |
-      c8 r e r c d | e e16( d e f) d8 d16( c d e) |
-      c8 r e r a\f b | c c16( b c d) b8 b16( a b c) |
-      \mark "To Coda         "
-      \bar "||"
-      %\pageBreak
-    %38
-      a8 e c a r g'\ff | c4. c | c8( b a) g( e g) | b4. b |
-      a8( g e) c( d e) | a4. g | g8( f e) d( c d) | 
-      e4( g8) d4( g8) | e4( g8) c4( d8) | e4. e | 
-      e8( d c) b( g b) | d4. d | d8( c b) a( e g) |
-    %51
-      c4. c | c d8( c d) | e4( c8) g( a b) | c( d c) bes( a gis) |
-    %55
-      \repeat volta 2 {
-      
-        a4.\mf c,8( b c) | a'4 c,8~ c bes'( a) | a4( g8) fis4( g8) |
-        d'4( c8) bes( a gis) | a4 c,8~ c b( c) | a'4 c,8~ c d( e) |
-        f4( g8) a4 a8 | 
+
+  \partial 2 e4  f | 
+  \repeat volta 2{
+    g2~ g8 g f e | d2~ d8 f e d | c2~ c8 e d c |
+    b[ \acciaccatura { a16 b } a8] g2. | r8 g' c g g4 e | 
+    f8 e d c16( d) d4. r8 | r c e g 
+    <<
+      \relative { g'8 g c c~ | c a~ a2. } 
+      \\
+      \relative { g'16 g8 c16~ c8 b16( a) | a1 } 
+    >>
+  %09
+    r8 g c g g4 e8. f16~ | f8 e d c16( d) d4. r8 | 
+    r8 c e g g4 e8 d16( c) | c2. r4 | r8 c' c c c16 c8. c8 g | 
+    r8 a a g e( g4.) | r8 c, e g g4. e16( d) | c2. r4 |
+  %17
+    e4. d16( c) c2 | r8 f f( a) a2 | g4 g8 g c4 b8( c16 d) |
+    d2. r4 | e4. d8 c2~ | c8 c c( b) a2 | a8 c4. g4 f8( e16 d) |
+    d1 | r8 e' d c c4  g8 e | f( a) a a a2 | g8 g g c f,~ f e( d) |
+  }
+    \alternative { 
+      {
+      <<
+        \relative { r2 e'4 f | } 
+        \\ 
+        \relative { c'1 | }
+      >>
       }
-      \alternative {
-        { b( a b) c16 c c8 c | }
-        { b ( a b) c4( d8) | }
-      }
-    %64
-      e4.~ e4 r8 \bar "||"
-      R1*6/8 *2
-      e,4.\mp c4( b8) | a4.~ a8 a( b) | c( a c) e4( f8) |
-      e4. d | d b4( a8) | gis4.~ gis8 e( gis) |
-      b( gis b) d( e f) | dis4._\markup { \left-align { D.S. "al Coda    " } } e | 
-      \bar "||"
-      \once \override Score.RehearsalMark.font-size = #4
-      \mark \markup { \musicglyph "scripts.coda" }
-      a8\f r e a r r
-      \bar "|."
-    } % end compressMMRests
-    
+      { c1 | }
+    }
+  %30
+    r8 e' d c c4 g8 e | f( a) a a a2 | g8 g g c\fermata f,4 e8( d) |
+    << 
+      \relative { r8 e''8 e f g c, c b }
+      \\
+      \relative { c'1 }
+    >>
+    a2~ a8 a f' d | e2 b | c1~ | c2. r4 \bar "|."
+
 } % end Melody
-  
+
 %%%%%%%% end Notes %%%%%%%%%
 
 \header {
 
-  title = \markup \center-column  { " Jazz suit No.2 Waltz "  " " }
+  title = \markup \center-column  { " 모란동백 "  " " }
   subtitle = "  "
   subsubtitle = "  "
-  composer = " Dmitri Shostakovich "
+  composer = "  "
   arranger = "  "
-  tagline = \markup { % "tagline = ##f"
+  tagline = ##f 
+  %{ \markup {
     for \fontsize # 3 \italic Jamfl
     with
     \line
     { LilyPond \simple #(lilypond-version) }
-  }
+  %}
 }
 
-#(set-global-staff-size 19)
+#(set-global-staff-size 20)
 
 \paper {
-  left-margin = 2.0\cm
-  right-margin = 1.8\cm
-  system-system-spacing.basic-distance = # 16  %#8
+  left-margin = 3.0\cm
+  right-margin = 2.8\cm
+  system-system-spacing.basic-distance = # 18  %#8
 }
 
 commands = {
   %\numericTimeSignature
-  \time 6/8
+  \time 4/4
   \key c \major
   %\tempo "Andante sostenuto" %4 = 76
 }
 
 \score {
-    \context Staff \relative c'' { \commands \Melody }
+    \context Staff \compressMMRests \relative c' { \commands \Melody }
   \layout {}
   % c\midi {}
 }
