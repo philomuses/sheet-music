@@ -1,118 +1,74 @@
-\version "lilypond-2.19.15-1.mingw"  % necessary for upgrading to future LilyPond versions.
+\version "2.19.15"  % necessary for upgrading to future LilyPond versions.
 
 flute = {  %Flute 1
 
 	\set Staff.instrumentName = "Flute 1"
 	
-	r2.
-	bes4.\p( c8 bes4
-	d2.)_\markup { \italic \small { poco cresc.} }
-	d4.( es8 d4
-	bes2.\mf)
+	R1*3/4 | bes4.\p( c8 bes4 | 
+	d2.)_\markup { \italic \small { poco cresc.} } |
+	d4.( es8 d4 | bes2.\mf) |
 %06
-	g4\>( bes a
-	bes2.\p\!)
-	R2.*3 \bar "||"
+	g4\>( bes a | bes2.\p\!) | R1*3/4 * 3 | \bar "||"
 %11
-	f4.\mp( g8 f4
-	d2.)
-	f4.( g8 f4
-	d2.)
-	c'2 c4(
+	f4.\mp( g8 f4 | d2.) | f4.( g8 f4 | d2.) | c'2 c4( |
 %16
-	a2.)
-	bes2 bes4(
-	f2.)
-	g2( a4
-	bes4. a8 g4
+	a2.) | bes2 bes4( | f2.) | g2( a4 | bes4. a8 g4 | 
 %21
-	f4. g8 f4
-	d es f8) r
-	g2( a4
-	bes4. a8 g4
-	f4. g8 f4
+	f4. g8 f4 | d es f8) r | g2( a4 | bes4. a8 g4 | f4. g8 f4 |
 %26
-	d4.) g8\<( a[ bes\!]
-	c2\mf c4
-	es4. c8 a4
-	bes2.
-	d2.)\> \! ^\markup { \italic \small { rall.}}
+	d4.) g8\<( a[ bes\!] | c2\mf c4 | es4. c8 a4 | bes2. |
+	d2.)\> \! ^\markup { \italic \small { rall.}} |
 %31
-	bes4.( \mp ^\markup { \italic \small { a tempo }} f8 d4
-	f4.\> ^\markup { \italic \small { rit.}} es8 c4\!
-	bes2.\p ^\markup { \italic \small { a tempo.}} )
-	f'4. _\markup { \italic \small { poco cresc.}}( g8 f4
-	c'2.)
+	bes4.( \mp ^\markup { \italic \small { a tempo }} f8 d4 |
+	f4.\> ^\markup { \italic \small { rit.}} es8 c4\! |
+	bes2.\p ^\markup { \italic \small { a tempo.}} ) |
+	f'4. _\markup { \italic \small { poco cresc.}}( g8 f4 | c'2.) |
 %36
-	c4.( d8 c4
-	f2\f d4
-	bes2.)
-	bes2( g4
-	d'2 ^\markup { \italic \small { rit.}} c4) \bar "||"
+	c4.( d8 c4 | f2\f d4 | bes2.) | bes2( g4 |
+	d'2 ^\markup { \italic \small { rit.}} c4) | \bar "||"
 %41	
-	\key f \major c8([ ^\markup { \italic \small { a tempo}} _\markup { \italic \small { poco decresc.}} a] a2
-	f8[ d] d2)
-	e8([ c] c2)
-	r2. ^\markup { \italic \small { rit.}} \bar "||"
-	r4 ^\markup { \italic \small { a tempo }} r8 g'8\p( g[ f])
+	\key f \major c8([ ^\markup { \italic \small { a tempo}} _\markup { \italic \small { poco decresc.}} a] a2 |
+	f8[ d] d2) | e8([ c] c2) |
+	R1*3/4 ^\markup { \italic \small { rit.}} | \bar "||"
+	r4 ^\markup { \italic \small { a tempo }} r8 g'8\p( g[ f]) |
 %46
-	r4 r8 es8( es[ des])
-	r4 r8 d8( e[ g]
-	g4 e f)
-	r4 r8 f8( f[ d]
-	e2 f8[ g] )
+	r4 r8 es8( es[ des]) | r4 r8 d8( e[ g] | g4 e f) |
+	r4 r8 f8( f[ d] | e2 f8[ g] ) |
 %51
-	r4 r8 a8( a[ f]
-	c'2.)\< \!
-	a,8\mp _\markup { \italic \small { poco cresc. } } ([ d] d2)
-	bes8([ d] d2)
-	c8([ e] e2)
+	r4 r8 a8( a[ f] | c'2.)\< \! |
+	a,8\mp _\markup { \italic \small { poco cresc. } } ([ d] d2) | 
+	bes8([ d] d2) | c8([ e] e2) |
 %56	
-	f8\mf([ g] a2)
-	d,8\mp_\markup { \italic \small { poco cresc.}}([ f] f2)
-	f8([ bes] bes2)
-	a8([ c] c2)
-	d4.\f( e8 f4)
+	f8\mf([ g] a2) | 
+	d,8\mp_\markup { \italic \small { poco cresc.}}([ f] f2) | 
+	f8([ bes] bes2) | a8([ c] c2) | d4.\f( e8 f4) | 
 %61
-	r4 g8([ d] d4)
-	d8([ bes] a4.) g8(
-	f\<[ a] a[ d] d[ f]\!
-	f2.\ff\fermata )
-	R2.*3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% r2.*4
+	r4 g8([ d] d4) | d8([ bes] a4.) g8( | f\<[ a] a[ d] d[ f]\! |
+	f2.\ff\fermata ) | R1*3/4 * 3 | 
 %68
-	r2.
-	g,2\p^\markup { \italic \small { rubato }} ( a4
-
-	bes2 g8[e]
+	R1*3/4 | g,2\p^\markup { \italic \small { rubato }} ( a4 | bes2 g8[e] |
 %71
-	f4\< a c\!
-	bes\> a g\!)
-	f\p( c a
-	c4.^\markup { \italic \small { rit.}} bes8 g4
-	f2.^\markup { \italic \small { Tempo 1 }} )
+	f4\< a c\! | bes\> a g\!) | f\p( c a |
+	c4.^\markup { \italic \small { rit.}} bes8 g4 | 
+	f2.^\markup { \italic \small { Tempo 1 }} ) | 
 %76	
-	r2 \tuplet 5/4 { es'16\p([ f g aes bes] }
-	c2.)\<\!
-	a4.\mf( bes8 a4
-	f4. _\markup { \italic \small { poco decresc.}} g8 f4
-	c4.^\markup { \italic \small { rit.}} d8 c4)
+	r2 \tuplet 5/4 { es'16\p([ f g aes bes] } | 
+	c2.)\<\! | a4.\mf( bes8 a4 |
+	f4. _\markup { \italic \small { poco decresc.}} g8 f4 |
+	c4.^\markup { \italic \small { rit.}} d8 c4) | 
 %81
-	f2.~^\markup { \italic \small { rubato}}
-	f2.~
-	f2.~^\markup { \italic \small { rit.}}
-	f2.\fermata
+	f2.~^\markup { \italic \small { rubato}} | 
+	f2.~ | f2.~^\markup { \italic \small { rit.}} | 
+	f2.\fermata | 
 	\bar "|."
 	
 } %end Flute 1
-
-
-
 
 violin = { %Flute 2
 
 	\set Staff.instrumentName = "Flute 2"
 	
-	r2.
+	R1*3/4
 	f4.\p( aes8 f4
 	a2. _\markup { \italic \small { poco cresc. } } )
 	aes2( aes4
@@ -120,7 +76,7 @@ violin = { %Flute 2
 %06
 	es4\>( g es\!
 	f2.\p )
-	R2.*3 \bar "||"
+	R1*3/4 * 3 \bar "||"
 %11
 	d4.(\mp es8 d4
 	bes2.)
@@ -161,7 +117,7 @@ violin = { %Flute 2
 	\key f \major a8^\markup { \italic \small { a tempo. } } _\markup { \italic \small { poco decresc. } }([ e] e2
 	d8[ bes] bes2)
 	c8([ a] a2)
-	r2.^\markup { \italic \small { rit. } } \bar "||"
+	R1*3/4^\markup { \italic \small { rit. } } \bar "||"
 	r4^\markup { \italic \small { a tempo } } r8 e'8\p( e[ d])
 %46
 	r4 r8 c( c[ bes])
@@ -186,9 +142,9 @@ violin = { %Flute 2
 	bes8([ g] f4 e)
 	d8\<([ f] f[ a] a[ d]\!
 	d2.\ff\fermata)
-	R2.*3
+	R1*3/4 * 3
 %68
-	r2.
+	R1*3/4
 	d,2\p^\markup { \italic \small { rubato } } ( e4
 	f8[ a] g[ f] e[ c]
 %71
@@ -196,7 +152,7 @@ violin = { %Flute 2
 	f2\> des4\!)
 	c\p( a f
 	f2)^\markup { \italic \small { rit. } } r4
-	r2.^\markup { \italic \small { Tempo 1 } }
+	R1*3/4^\markup { \italic \small { Tempo 1 } }
 %76
 	f'4.\p( g8 f4
 	a2.)\< \!
@@ -211,14 +167,11 @@ violin = { %Flute 2
 	
 } %end Flute 2
 
-
-
-
 oboe = { %Flute 3
 
 	\set Staff.instrumentName = "Flute 3"
 	
-	r2.
+	R1*3/4
 	des4.\p( es8 des4
 	f2._\markup { \italic \small { poco cresc. } } )
 	f2( f4
@@ -226,7 +179,7 @@ oboe = { %Flute 3
 %06
 	bes4\>( es c
 	d2.\p)
-	R2.*3
+	R1*3/4 * 3
 %11
 	bes2\mp( bes4
 	g2.)
@@ -292,9 +245,9 @@ oboe = { %Flute 3
 	g8([ d] cis2)
 	a8\<([ d] d[ f] f[ a] \!
 	b2.\fermata \ff)
-	R2.*3
+	R1*3/4 * 3
 %68
-	r2.
+	R1*3/4
 	bes,2\p ^\markup { \italic \small { rubato } } ( c4
 	d8[ f] e[ d] c[ bes]
 %71	
@@ -302,7 +255,7 @@ oboe = { %Flute 3
 	d\> des bes\!)
 	a\p( f e
 	d2) ^\markup { \italic \small { rit. } } r4
-	r2. ^\markup { \italic \small { Tempo 1 } }
+	R1*3/4^\markup { \italic \small { Tempo 1 } }
 %76
 	aes'4.\p( bes8 aes4
 	c2.\< \!)
@@ -366,9 +319,9 @@ commands = {
 	
 		\simultaneous {
 	
-			\new Staff \relative c''' { \commands \flute }
-			\new Staff \relative c'' { \commands \violin }
-			\new Staff \relative c'' { \commands \oboe } 
+			\new Staff \compressMMRests \relative c''' { \commands \flute }
+			\new Staff \compressMMRests \relative c'' { \commands \violin }
+			\new Staff \compressMMRests \relative c'' { \commands \oboe } 
 			%\context Staff="flute" \flute
 			%\context Staff="violin" \violin
 		}
