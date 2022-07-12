@@ -42,6 +42,13 @@ Melody = {
 
 } % end Melody
 
+\addlyrics {
+  \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 
+  \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 
+  \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 
+  모 란 은 벌 써 지 고 없 는 데 먼 산 에 뻐 꾹 이 울 면 
+  상 냥 한 얼 굴 모 란 아 가 씨 꿈 속 에 찾 아 오 네   
+}
 %%%%%%%% end Notes %%%%%%%%%
 
 \header {
@@ -77,6 +84,7 @@ commands = {
 
 \score {
     \context Staff \compressMMRests \relative c' { \commands \Melody }
+    %\new Lyrics \lyricsto "melodyVoice" \lyric
   \layout {}
   % c\midi {}
 }
