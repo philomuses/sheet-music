@@ -25,24 +25,22 @@ Melody = {
       {
       <<
         \relative { r2 e'4 f | } 
+        \addlyrics {
+        \set stanza = "1. "
+        요
+        }
         \\ 
         \relative { c'1 | }
+        \addlyrics {
+        \set stanza = "2. "
+        요
+        }
       >>
       }
       { c1 | }
     }
-  %30
-    r8 e' d c c4 g8 e | f( a) a a a2 | g8 g g c\fermata f,4 e8( d) |
-    << 
-      \relative { r8 e''8 e f g c, c b }
-      \\
-      \relative { c'1 }
-    >>
-    a2~ a8 a f' d | e2 b | c1~ | c2. r4 \bar "|."
 
-} % end Melody
-
-\addlyrics {
+    \addlyrics {
   \set stanza = "1. "
   \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 
   \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 
@@ -56,6 +54,9 @@ Melody = {
 }
 \addlyrics { 
   \set stanza = "2. "
+  \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 
+  \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 
+  \skip 1 \skip 1 \skip 1 \skip 1 \skip 1
   동 백 은 벌 써 지 고 없 는 데 들 녘 에 눈 이 내 리 면
   상 냥 한 얼 굴 동 백 아 가 씨 꿈 속 에 웃 고 있 네
   세 상 은 바 람 불 고 덧 없 어 라 나 어 느 바 다 에
@@ -63,6 +64,16 @@ Melody = {
   외 로 이 외 로 이 잠 든 다 해 도
   또 한 번 동 백 이 필 때 까 지 나 를 잊 지 말 아 
 }
+  %30
+    r8 e' d c c4 g8 e | f( a) a a a2 | g8 g g c\fermata f,4 e8( d) |
+    << 
+      \relative { r8 e''8 e f g c, c b }
+      \\
+      \relative { c'1 }
+    >>
+    a2~ a8 a f' d | e2 b | c1~ | c2. r4 \bar "|."
+
+} % end Melody
 
 %%%%%%%% end Notes %%%%%%%%%
 
