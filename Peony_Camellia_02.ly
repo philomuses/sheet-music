@@ -9,12 +9,13 @@ Melody = {
     f8 e d c16( d) d4. r8 | r c e g 
     <<
       %\relative c''
-      { g8 g c c~ | c a~ a2. }
-      %\addlyrics { 뻐 꾹 이 울 면  }
+      { \voiceOne g8 g c c~ | c a~ a2. }
+      \addlyrics { 뻐 꾹 이 울 면  }
       \\
       %\relative c''
-      { g16 g8 c16~ c8 b16( a) | a1 } 
-    >>
+      \new Voice { \voiceTwo g16 g8 c16~ c8 b16( a) | a1 } 
+      \addlyrics { 눈 이 내 리 면 }
+    >> \oneVoice
   %09
     r8 g c g g4 e8. f16~ | f8 e d c16( d) d4. r8 | 
     r8 c e g g4 e8 d16( c) | c2. r4 | r8 c' c c c16 c8. c8 g | 
@@ -43,7 +44,7 @@ Melody = {
   \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 
   \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 
   \skip 1 \skip 1 \skip 1 
-  모 란 은 벌 써 지 고 없 는 데 먼 산 에 뻐 꾹 이 울 면 
+  모 란 은 벌 써 지 고 없 는 데 먼 산 에  
   상 냥 한 얼 굴 모 란 아 가 씨 꿈 속 에 찾 아 오 네 
   세 상 은 바 람 불 고 고 달 파 라 나 어 느 변 방 에
   떠 돌 다 떠 돌 다 어 느 나 무 그 늘 에
@@ -55,7 +56,7 @@ Melody = {
   \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 
   \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 
   \skip 1 \skip 1 \skip 1 
-  동 백 은 벌 써 지 고 없 는 데 들 녘 에 눈 이 내 리 면
+  동 백 은 벌 써 지 고 없 는 데 들 녘 에 
   상 냥 한 얼 굴 동 백 아 가 씨 꿈 속 에 웃 고 있 네
   세 상 은 바 람 불 고 덧 없 어 라 나 어 느 바 다 에
   떠 돌 다 떠 돌 다 어 느 모 랫 벌 에
@@ -64,6 +65,9 @@ Melody = {
 }
   %30
     r8 e' d c c4 g8 e | f( a) a a a2 | g8 g g c\fermata f,4 e8( d) |
+    \addlyrics { 
+      또 한 번 모 란 이 필 때 까 지 나 를 잊 지 말 아
+    }
     << 
       \relative { r8 e'8 e f g c, c b }
       \\
