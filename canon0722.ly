@@ -1,4 +1,4 @@
-\version "2.22.2"
+\version "2.22.1"
 
 Flute_First = \relative c''' {
 
@@ -80,7 +80,7 @@ Flute_Second = \relative c'' {
   d d d d c c c c
   d d d d e e e e
 %41
-  f8\mp f,16( g) a8 f e e'16( f) g8 e
+  f8\mp f,16( g) a8 f e e'16( f) g8 e |
   d d,16( e) f8 d e c'16( bes) a8 g
   f bes16( a) g8 bes a f16( g) a8 c
   bes d16( c) bes8 a g c16( bes) a8 g
@@ -152,7 +152,7 @@ commands = {
   >>
 
   \layout {}
-  \midi {}
+  %\midi {}
 }
 
 
