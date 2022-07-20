@@ -133,8 +133,8 @@ Flute_Second = \relative c'' {
 #(set-global-staff-size 21)
 
 \paper {
-  left-margin = 2.0\cm
-  right-margin = 1.8\cm
+  left-margin = 1.6\cm
+  right-margin = 1.4\cm
   system-system-spacing.basic-distance = # 6  %#8
 }
 
